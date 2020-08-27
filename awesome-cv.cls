@@ -607,15 +607,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 % Define an environment for cvproject
 \newenvironment{cvprojects}{%
   \vspace{\acvSectionContentTopSkip}
@@ -640,26 +631,6 @@
     }}
   \end{tabular*}%
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
