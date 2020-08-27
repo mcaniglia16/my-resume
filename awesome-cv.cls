@@ -623,7 +623,7 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#2} & \entrylocationstyle{#3} \\}
-      {\entrytitlestyle{#1} | \entrypositionstyle{#2} | \entrypositionstyle{#4} & \entrydatestyle{\color{awesome}#3} \\}
+      {\entrytitlestyle{#1} | \entrypositionstyle{#2} {\color{awesome}\rightarrow}  \entrypositionstyle{#4} & \entrydatestyle{\color{awesome}#3} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{
       \begin{cvitems}
         \item {#5}
