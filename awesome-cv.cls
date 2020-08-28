@@ -671,7 +671,7 @@
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{1.5cm} L{\textwidth * \real{0.739}} R{2.5cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth * \real{0.739}} R{2.5cm}}
 }{%
     \end{tabular*}
   \end{center}
@@ -679,7 +679,7 @@
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
 \newcommand*{\cvhonor}[4]{%
-  \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{} \\
+  \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#4} \\
 }
 
 % Define an environment for cvskill
