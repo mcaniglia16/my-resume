@@ -200,8 +200,8 @@
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{awesome} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\slshape\color{awesome} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{text} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of subentry
@@ -631,7 +631,7 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#2} & \entrylocationstyle{#3} \\}
-      {\entrytitlestyle{#1} | \entrypositionstyle{#2} {\color{awesome}\rightarrow}  \entrypositionstyle{#4} & \entrydatestyle{\color{awesome}#3} \\}
+      {\entrytitlestyle{#1} | \entrypositionstyle{#2} {\color{awesome}\rightarrow}  \entrypositionstyle{#4} & \entrydatestyle{#3} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{
       \begin{cvitems}
         \item {#5}
@@ -679,7 +679,7 @@
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<date>}
 \newcommand*{\cvhonor}[3]{%
-  \honorpositionstyle{#1}, \honortitlestyle{#2} & \entrylocationstyle{#3} \\
+  \honorpositionstyle{#1}, \honortitlestyle{#2} & \entrydatestyle{#3} \\
 }
 
 % Define an environment for cvskill
