@@ -632,11 +632,7 @@
     \ifempty{#2#3}
       {\entrypositionstyle{#2} & \entrylocationstyle{#3} \\}
       {\entrytitlestyle{#1} | \entrypositionstyle{#2} {\color{awesome}\rightarrow}  \entrypositionstyle{#4} & \entrydatestyle{#3} \\}
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{
-      \begin{cvitems}
-        \item {#5}
-      \end{cvitems}
-    }}
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
 }
 
