@@ -604,7 +604,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     
   \end{tabular*}%
-  \vspace{-1.0mm}
+  \vspace{0.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \hyphenpenalty=10000
