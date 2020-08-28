@@ -664,22 +664,44 @@
   \end{tabular*}
 }
 
+% % Define an environment for cvhonor
+% \newenvironment{cvhonors}{%
+%   \vspace{\acvSectionContentTopSkip}
+%   \vspace{-2mm}
+%   \begin{center}
+%     \setlength\tabcolsep{1ex}
+%     \setlength{\extrarowheight}{0pt}
+% % <<<<<<< HEAD
+%     % \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth * \real{0.739}} R{2.5cm}}
+% % =======
+%     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
+% % >>>>>>> 427e456... Custom spacing for committee through cvhonors environment
+% }{%
+%     \end{tabular*}
+%   \end{center}
+% }
+% % Define a line of cv information(honor, award or something else)
+% % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+% \newcommand*{\cvhonor}[4]{%
+%   \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#4} \\
+% }
+
 % Define an environment for cvhonor
 \newenvironment{cvhonors}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2mm}
   \begin{center}
-    \setlength\tabcolsep{1ex}
+    \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth * \real{0.739}} R{2.5cm}}
+    \begin{tabular*}{\textwidth}{L{\textwidth - 2.0cm} R{2.0cm}}
 }{%
     \end{tabular*}
   \end{center}
 }
 % Define a line of cv information(honor, award or something else)
-% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
-\newcommand*{\cvhonor}[4]{%
-  \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#4} \\
+% Usage: \cvhonor{<position>}{<title>}{<date>}
+\newcommand*{\cvhonor}[3]{%
+  \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 
 % Define an environment for cvskill
