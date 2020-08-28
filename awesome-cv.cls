@@ -188,9 +188,9 @@
 % For fundamental structures
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
-\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{8.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\newcommand*{\headeraddressstyle}[1]{{\fontsize{9pt}{1em}\headerfont\itshape\color{lighttext} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{8.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -389,12 +389,12 @@
 \newcommand{\acvHeaderAfterAddressSkip}{-.5mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\acvHeaderAfterSocialSkip}{6mm}
-\newcommand{\acvHeaderAfterQuoteSkip}{5mm}
+\newcommand{\acvHeaderAfterSocialSkip}{0mm}
+\newcommand{\acvHeaderAfterQuoteSkip}{0mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionTopSkip}{2mm}
+\newcommand{\acvSectionContentTopSkip}{1.5mm}
 
 
 %-------------------------------------------------------------------------------
@@ -663,28 +663,6 @@
       {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
 }
-
-% % Define an environment for cvhonor
-% \newenvironment{cvhonors}{%
-%   \vspace{\acvSectionContentTopSkip}
-%   \vspace{-2mm}
-%   \begin{center}
-%     \setlength\tabcolsep{1ex}
-%     \setlength{\extrarowheight}{0pt}
-% % <<<<<<< HEAD
-%     % \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth * \real{0.739}} R{2.5cm}}
-% % =======
-%     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
-% % >>>>>>> 427e456... Custom spacing for committee through cvhonors environment
-% }{%
-%     \end{tabular*}
-%   \end{center}
-% }
-% % Define a line of cv information(honor, award or something else)
-% % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
-% \newcommand*{\cvhonor}[4]{%
-%   \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#4} \\
-% }
 
 % Define an environment for cvhonor
 \newenvironment{cvhonors}{%
