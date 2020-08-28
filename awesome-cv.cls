@@ -607,10 +607,10 @@
   \vspace{0.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \hyphenpenalty=10000
+  \hyphenpenalty=10000 % Disable hyphens when wrapping lines
   \exhyphenpenalty=10000
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 2.0cm} R{2.0cm}}
-    \descriptionstyle{#5} & \hspace{2.0cm}\\
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 1.5cm} R{1.5cm}} % Control right margin spacing with the 3 numbers here
+    \descriptionstyle{#5} & \hspace{1.5cm}\\
   \end{tabular*}%
 }
 
