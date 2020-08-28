@@ -602,7 +602,15 @@
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+    
+  \end{tabular*}%
+  \vspace{-1.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \hyphenpenalty=10000
+  \exhyphenpenalty=10000
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 2.0cm} R{2.0cm}}
+    \descriptionstyle{#5} & \hspace{2.0cm}\\
   \end{tabular*}%
 }
 
