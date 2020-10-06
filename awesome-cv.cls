@@ -667,7 +667,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{L{\textwidth - 2.0cm} R{2.0cm}}
+    \begin{tabular*}{\textwidth}{L{\textwidth - 3.0cm} R{3.0cm}}
 }{%
     \end{tabular*}
   \end{center}
@@ -685,7 +685,7 @@
   \begin{center}
     \setlength\tabcolsep{0.75ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r | L{\textwidth * \real{0.9}}}
 }{%
     \end{tabular*}
   \end{center}
