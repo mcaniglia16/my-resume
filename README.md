@@ -1,7 +1,7 @@
 <h2>Note: I did not originally create this template. I forked this repository from <a
-    href="https://github.com/posquit0/Awesome-CV/">https://github.com/posquit0/Awesome-CV/</a> and make edits to the
+    href="https://github.com/posquit0/Awesome-CV/">https://github.com/posquit0/Awesome-CV/</a> and made edits to the
   template for my own liking. This repository is public so that my website <a href="kevinismyna.me">kevinismyna.me</a>
-  can host a link to my resume, which is an asset managed in this repository</h2>
+  can host a link to my resume, which is an asset in this repository</h2>
 
 <h1 align="center">
   <a href="https://github.com/posquit0/Awesome-CV" title="AwesomeCV Documentation">
