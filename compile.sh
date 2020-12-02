@@ -1,1 +1,1 @@
-xelatex kevin_wu_resume.tex
+xelatex resume.tex
