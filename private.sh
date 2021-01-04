@@ -1,0 +1,1 @@
+xelatex resume.tex && mv resume.pdf kevin_wu_resume.pdf
